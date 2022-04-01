@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 Flex box</title>
+    <style>
+        .item{
+            background: #048;
+            text-align: center;
+            color: white;
+            border:1px solid black
+        }
+        .container{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 30px;
+            grid-row-gap: 10px;
+            
+            
+            
+            
+            
+            
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+        }
+        .flexivel{
+            display: flex;
+            
+        }
+        .horizontal{
+            flex-direction: row;
+        }
+
+        .vertical{
+            flex-direction: column;
+        }
+        .quebra{
+            flex-wrap: wrap;
+
+        }
+        .fluxo-horizontal-quebra{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .fluxo-horizontal-sem-quebra{
+            flex-flow: row nowrap;
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+        <div class="item">CFB Cursos 1</div>
+        <div class="item">CFB Cursos 2</div>
+        <div class="item">CFB Cursos 3</div>
+        <div class="item">CFB Cursos 4</div>
+        <div class="item">CFB Cursos 5</div>
+        <div class="item">CFB Cursos 6</div>
+        <div class="item">CFB Cursos 7</div>
+        <div class="item">CFB Cursos 8</div>
+        <div class="item">CFB Cursos 9</div>
+        
+     
+    </div>
+</body>
+</html>
