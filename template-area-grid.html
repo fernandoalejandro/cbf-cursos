@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de template area grid</title>
+    <style>
+        .item{
+            background: #048;
+            text-align: center;
+            color: white;
+            border:1px solid black
+        }
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 100px 100px 100px;
+            grid-template-areas: 
+                "header header header header"
+                "main main main lateral"
+                "footer footer footer footer"
+            
+            ;  
+        }
+        .header{
+            grid-area: header;
+        }
+        .principal{
+            grid-area: main;
+        }
+        .lateral{
+            grid-area: lateral;
+        }
+        .footer{
+            grid-area: footer;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+        }
+     
+    </style>
+</head>
+<body>
+<div class="container">
+        <div class="item header">HEADER</div>
+        <div class="item principal">MAIN</div>
+        <div class="item lateral">LATERAL</div>
+        <div class="item footer">FOOTER 4</div>
+       
+        
+     
+    </div>
+</body>
+</html>
